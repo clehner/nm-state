@@ -1,0 +1,24 @@
+{
+  "name": "nm-state",
+  "version": "1.0.0",
+  "description": "Get NetworkManager's state",
+  "main": "index.js",
+  "dependencies": {
+    "dbus": "^0.2.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clehner/nm-state"
+  },
+  "homepage": "https://github.com/clehner/nm-state",
+  "keywords": [
+    "network",
+    "networkmanager",
+    "dbus"
+  ],
+  "author": "Charles Lehner (http://celehner.com/)",
+  "license": "GPL-3.0+",
+  "bugs": {
+    "url": "https://github.com/clehner/nm-state/issues"
+  }
+}
