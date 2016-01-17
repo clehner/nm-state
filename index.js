@@ -16,9 +16,9 @@
  */
 
 var events = require('events')
-var DBus = require('dbus')
+var dbus = require('dbus-native')
 
-var bus = new DBus().getBus('system')
+var bus = dbus.systemBus()
 var monitor = new events.EventEmitter()
 var state = 0
 var inited = false
@@ -29,7 +29,7 @@ function gotError (err) {
 
 function init () {
   inited = true
-  bus.getInterface('org.freedesktop.NetworkManager',
+  bus.getInterface('org.freedesktop.NetworkManager').getInterface(
     '/org/freedesktop/NetworkManager',
     'org.freedesktop.NetworkManager',
     function (err, iface) {
